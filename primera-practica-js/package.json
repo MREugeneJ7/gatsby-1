@@ -1,8 +1,8 @@
 {
-  "name": "primera-practica",
+  "name": "primera-practica-js",
   "version": "1.0.0",
   "private": true,
-  "description": "primera-practica",
+  "description": "primera-practica-js",
   "author": "MREugeneJ7",
   "keywords": [
     "gatsby"
@@ -12,18 +12,11 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^5.13.0",
+    "gatsby": "^5.13.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.3.3",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "typescript": "^5.1.6"
   }
 }
