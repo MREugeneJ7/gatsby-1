@@ -19,21 +19,32 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
+const navbar = {
+  padding: "20px",
+  "background-color": "#67b8aa",
+  margin: "none"
+}
+
 
 const AboutPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Practica 1 - About
-      </h1>
-      <div>
-        <span>Creado por Eugenio en 05/01/2024</span>
-        <br></br>
-        <img src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-170.jpg"></img>
-      </div>
-      <BuildingComponent></BuildingComponent>
-      <a href="/" style={linkStyle}>Index</a>
-    </main>
+    <>
+      <nav style={navbar}>
+        This is a navbar
+      </nav>
+      <main style={pageStyles}>
+        <h1 style={headingStyles}>
+          Practica 1 - About
+        </h1>
+        <div>
+          <span>Creado por Eugenio en 05/01/2024</span>
+          <br></br>
+          <img src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-170.jpg"></img>
+        </div>
+        <BuildingComponent></BuildingComponent>
+        <a href="/" style={linkStyle}>Index</a>
+      </main>
+    </>
   )
 }
 

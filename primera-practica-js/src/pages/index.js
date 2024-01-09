@@ -18,15 +18,26 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
+const navbar = {
+  padding: "20px",
+  "background-color": "#67b8aa",
+  margin: "none"
+}
+
 
 const IndexPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Practica 1 - Index
-      </h1>
-      <a href="/about" style={linkStyle}>about</a>
-    </main>
+    <>
+      <nav style={navbar}>
+        This is a navbar
+      </nav>
+      <main style={pageStyles}>
+        <h1 style={headingStyles}>
+          Practica 1 - Index
+        </h1>
+        <a href="/about" style={linkStyle}>about</a>
+      </main>
+    </>
   )
 }
 
