@@ -1,5 +1,7 @@
 import * as React from "react"
 import BuildingComponent from "../components/buildings-component"
+import Layout from "../components/layout"
+import {Link} from 'gatsby'
 
 const pageStyles = {
   color: "#232129",
@@ -19,20 +21,11 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
-const navbar = {
-  padding: "20px",
-  "background-color": "#67b8aa",
-  margin: "none"
-}
-
 
 const AboutPage = () => {
   return (
-    <>
-      <nav style={navbar}>
-        This is a navbar
-      </nav>
-      <main style={pageStyles}>
+    <main style={pageStyles}>
+      <Layout>
         <h1 style={headingStyles}>
           Practica 1 - About
         </h1>
@@ -42,9 +35,9 @@ const AboutPage = () => {
           <img src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-170.jpg"></img>
         </div>
         <BuildingComponent></BuildingComponent>
-        <a href="/" style={linkStyle}>Index</a>
-      </main>
-    </>
+        <Link to="/" style={linkStyle}>Index</Link>
+      </Layout>
+    </main>
   )
 }
 

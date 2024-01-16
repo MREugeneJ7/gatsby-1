@@ -1,4 +1,6 @@
 import * as React from "react"
+import Layout from "../components/layout"
+import {Link} from 'gatsby'
 
 const pageStyles = {
   color: "#232129",
@@ -18,26 +20,17 @@ const linkStyle = {
   verticalAlign: "5%",
 }
 
-const navbar = {
-  padding: "20px",
-  "background-color": "#67b8aa",
-  margin: "none"
-}
-
 
 const IndexPage = () => {
   return (
-    <>
-      <nav style={navbar}>
-        This is a navbar
-      </nav>
-      <main style={pageStyles}>
+    <main style={pageStyles}>
+      <Layout>
         <h1 style={headingStyles}>
           Practica 1 - Index
         </h1>
-        <a href="/about" style={linkStyle}>about</a>
-      </main>
-    </>
+        <Link to="/about" style={linkStyle}>about</Link>
+      </Layout >
+    </main>
   )
 }
 
